@@ -4,11 +4,14 @@
 	--lt-grey: rgb(199, 199, 199);
 	--lt-grey-hl: rgb(242, 242, 242);
 	--lt-green-bg: #2a2a2a;
+	--roboto: 'Roboto';
+	--kameron: 'Kameron';
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	font-family: var(--roboto);
 }
 
 a {
@@ -40,11 +43,13 @@ footer {
 .nav {
 	position: absolute;
 	display: flex;
+	overflow: hidden;
 	z-index: 5000;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--bg-grey);
+	top: -100%;
 	height: 100%;
 	width: 100%;
 	padding: 0 10px;
@@ -53,8 +58,12 @@ footer {
 /* .nav:first-child {
 	justify-content: left;
 } */
+.nav.transition-open {
+	transition: transform 1s ease-out;
+	transform: translateY(100%);
+}
 
-.nav.transition-active {
+.nav.transition-close {
 	transition: transform 2s ease-out;
 	transform: translateY(-100%);
 }
@@ -79,12 +88,13 @@ footer {
 	margin: 2em 0;
 	font-size: 2em;
 	color: var(--lt-grey);
-	transition: transform 0.25s ease-out;
+	transition: all 0.25s ease-out;
 }
 
 .menu-button:hover {
 	color: var(--lt-grey-hl);
 	transform: scale(1.1);
+	font-weight: bold;
 }
 
 .menu-button:focus {
@@ -98,6 +108,10 @@ footer {
 	justify-content: center;
 }
 
+#main-block p {
+	font-family: var(--kameron);
+}
+
 .intro {
 	text-align: center;
 }
@@ -106,9 +120,15 @@ footer {
 	display: grid;
 	height: 100%;
 	width: 100%;
+	grid-template-rows: 100px 1fr;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 'header header header';
 	justify-items: center;
 	align-content: center;
+}
+
+#main-block-projects h3 {
+	grid-area: header;
 }
 
 .project-tile {
@@ -160,6 +180,7 @@ footer {
 	padding: 0.5em 1em;
 	background-color: var(--bg-green);
 	color: var(--lt-green-bg);
+	font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {

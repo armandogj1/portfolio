@@ -15,7 +15,7 @@ const Menu = ({ buttons }) => {
 		const nav = document.getElementsByClassName('nav')[0];
 
 		e.preventDefault();
-		nav.className = nav.className + ' transition-active';
+		nav.className = nav.className + ' transition-close';
 		router.push(e.target.name);
 
 		const handleTransitionEnd = () => {
@@ -36,8 +36,8 @@ const Menu = ({ buttons }) => {
 			>
 				{isOpen ? 'X' : '🍔'}
 			</span>
-			{isOpen && (
-				<nav className='nav'>
+			{
+				<nav className={isOpen ? 'nav transition-open' : 'nav'}>
 					{buttons.map((button) => (
 						<MenuButton
 							key={button.path}
@@ -47,7 +47,7 @@ const Menu = ({ buttons }) => {
 						/>
 					))}
 				</nav>
-			)}
+			}
 		</>
 	);
 };

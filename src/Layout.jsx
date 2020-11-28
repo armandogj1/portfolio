@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => {
 	return (
 		<div id='layout'>
 			<Head>
-				<title>{title}</title>
+				<title>portfolio</title>
 				<meta charSet='utf-8' />
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
