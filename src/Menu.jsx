@@ -37,7 +37,9 @@ const Menu = ({ buttons }) => {
 				{isOpen ? 'X' : '🍔'}
 			</span>
 			{
-				<nav className={isOpen ? 'nav transition-open' : 'nav'}>
+				<nav
+					className={isOpen ? 'nav transition-open' : 'nav transition-close'}
+				>
 					{buttons.map((button) => (
 						<MenuButton
 							key={button.path}

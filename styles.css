@@ -123,12 +123,17 @@ footer {
 	grid-template-rows: 100px 1fr;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas: 'header header header';
-	justify-items: center;
-	align-content: center;
+	/* justify-items: center; */
+	/* align-content: center; */
 }
 
 #main-block-projects h3 {
+	place-self: center;
 	grid-area: header;
+}
+
+#main-block-projects a {
+	place-self: center;
 }
 
 .project-tile {
