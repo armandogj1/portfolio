@@ -1,17 +1,58 @@
 [
-	{
-		"name": "Apptendance",
-		"image": "apptendance.png",
-		"description": "This is an attendance app for use at Hack Reactor"
-	},
-	{
-		"name": "Apptendance",
-		"image": "apptendance.png",
-		"description": "This is an attendance app for use at Hack Reactor"
-	},
-	{
-		"name": "Apptendance",
-		"image": "apptendance.png",
-		"description": "This is an attendance app for use at Hack Reactor"
-	}
+  {
+    "name": "Namaslay",
+    "image": "apptendance.png",
+    "path": "namaslay",
+    "description": "Meditation and Yoga Social App",
+    "github": "https://github.com/blue-ocean-hrnyc31/namaslay-client",
+    "technologies": "Node/React/Postgres/AWS"
+  },
+  {
+    "name": "Robin",
+    "image": "apptendance.png",
+    "path": "robin",
+    "description": "Single Page e-commerce App using React and Redux",
+    "github": "https://github.com/HRNYC31-Robin/Project-Catwalk",
+    "technologies": "Node/React/Redux"
+  },
+  {
+    "name": "CloudStorm",
+    "image": "apptendance.png",
+    "path": "cloudstorm",
+    "description": "Micro-service for an e-commerce front-end",
+    "github": "https://github.com/Cumulonimbus-SDC/Products",
+    "technologies": "Node/Postgres/Docker/AWS"
+  },
+  {
+    "name": "Apptendance",
+    "image": "apptendance.png",
+    "path": "apptendance",
+    "description": "This is an attendance app for use at Hack Reactor",
+    "github": "https://github.com/armandogj1/Appttendance",
+    "technologies": "Node/React/GoogleAPI"
+  },
+  {
+    "name": "fesh",
+    "image": "apptendance.png",
+    "path": "fesh",
+    "description": "Axios wrapper for Command Line",
+    "github": "https://github.com/armandogj1/fesh",
+    "technologies": "Node"
+  },
+  {
+    "name": "npmrum",
+    "image": "apptendance.png",
+    "path": "npmrum",
+    "description": "CLI to run rpm scripts",
+    "github": "https://github.com/armandogj1/npmrum",
+    "technologies": "Node/React-Ink"
+  },
+  {
+    "name": "git-cli",
+    "image": "apptendance.png",
+    "path": "git-cli",
+    "description": "CLI to selectively add files for commit",
+    "github": "https://github.com/armandogj1/npmrum",
+    "technologies": "Node/React-Ink"
+  }
 ]
