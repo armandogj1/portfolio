@@ -15,7 +15,7 @@
     "description": "Single Page e-commerce App using React and Redux",
     "github": "https://github.com/HRNYC31-Robin/Project-Catwalk",
     "technologies": "Node/React/Redux",
-    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
+    "summary": "A retail page using React, Redux, React-router. Provides product overview, favorited styles and ratings & reviews for a large collection of merchandice."
   },
   {
     "name": "CloudStorm",
@@ -24,7 +24,7 @@
     "description": "Micro-service for an e-commerce front-end",
     "github": "https://github.com/Cumulonimbus-SDC/Products",
     "technologies": "Node/Postgres/Docker/AWS",
-    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
+    "summary": "API microservice using docker, postgres and Express; deployed on AWS t2.micro"
   },
   {
     "name": "Apptendance",
@@ -43,7 +43,7 @@
     "description": "Axios wrapper for Command Line",
     "github": "https://github.com/armandogj1/fesh",
     "technologies": "Node",
-    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
+    "summary": "A simple command-line tool to make http requests. Provides most common requests methods and options for data and headers."
   },
   {
     "name": "npmrum",
@@ -52,7 +52,7 @@
     "description": "CLI to run rpm scripts",
     "github": "https://github.com/armandogj1/npmrum",
     "technologies": "Node/React-Ink",
-    "summary": "Command line app using react-ink to find and select available npm scripts"
+    "summary": "Command line app using react-ink to find and select available npm scripts. If the current directory contains a package.json, all available scripts will be accessible and ready to run."
   },
   {
     "name": "git-cli",
@@ -61,6 +61,6 @@
     "description": "CLI to selectively add files for commit",
     "github": "https://github.com/armandogj1/npmrum",
     "technologies": "Node/React-Ink",
-    "summary": "Command line app using react-ink to easily select the files to add before a commit"
+    "summary": "Command line app using react-ink to easily select the files to add before a commit. Helpful for organizing git commits."
   }
 ]
