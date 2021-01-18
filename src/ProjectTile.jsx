@@ -11,7 +11,7 @@ const ProjectTile = ({ name, image, description, github }) => {
         <Image
           src={`/${image}`}
           alt={`${name} Image`}
-          width='200'
+          width='360'
           height='200'
         />
       </div>

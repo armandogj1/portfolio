@@ -5,7 +5,8 @@
     "path": "namaslay",
     "description": "Meditation and Yoga Social App",
     "github": "https://github.com/blue-ocean-hrnyc31/namaslay-client",
-    "technologies": "Node/React/Postgres/AWS"
+    "technologies": "Node/React/Postgres/AWS",
+    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
   },
   {
     "name": "Robin",
@@ -13,7 +14,8 @@
     "path": "robin",
     "description": "Single Page e-commerce App using React and Redux",
     "github": "https://github.com/HRNYC31-Robin/Project-Catwalk",
-    "technologies": "Node/React/Redux"
+    "technologies": "Node/React/Redux",
+    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
   },
   {
     "name": "CloudStorm",
@@ -21,38 +23,44 @@
     "path": "cloudstorm",
     "description": "Micro-service for an e-commerce front-end",
     "github": "https://github.com/Cumulonimbus-SDC/Products",
-    "technologies": "Node/Postgres/Docker/AWS"
+    "technologies": "Node/Postgres/Docker/AWS",
+    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
   },
   {
     "name": "Apptendance",
     "image": "apptendance.png",
     "path": "apptendance",
-    "description": "This is an attendance app for use at Hack Reactor",
+    "description": "An attendance app for use at Hack Reactor",
     "github": "https://github.com/armandogj1/Appttendance",
-    "technologies": "Node/React/GoogleAPI"
+    "technologies": "Node/React/GoogleAPI",
+    "summary": "A single page app to take student attendance. The sudents tally persist in a Google Sheet and email templates are provided for tardies and absences.",
+    "deployed": "https://gentle-brook-48303.herokuapp.com/"
   },
   {
     "name": "fesh",
-    "image": "apptendance.png",
+    "image": "fesh.png",
     "path": "fesh",
     "description": "Axios wrapper for Command Line",
     "github": "https://github.com/armandogj1/fesh",
-    "technologies": "Node"
+    "technologies": "Node",
+    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message."
   },
   {
     "name": "npmrum",
-    "image": "apptendance.png",
+    "image": "npmrum.png",
     "path": "npmrum",
     "description": "CLI to run rpm scripts",
     "github": "https://github.com/armandogj1/npmrum",
-    "technologies": "Node/React-Ink"
+    "technologies": "Node/React-Ink",
+    "summary": "Command line app using react-ink to find and select available npm scripts"
   },
   {
     "name": "git-cli",
-    "image": "apptendance.png",
+    "image": "git-cli.png",
     "path": "git-cli",
     "description": "CLI to selectively add files for commit",
     "github": "https://github.com/armandogj1/npmrum",
-    "technologies": "Node/React-Ink"
+    "technologies": "Node/React-Ink",
+    "summary": "Command line app using react-ink to easily select the files to add before a commit"
   }
 ]
