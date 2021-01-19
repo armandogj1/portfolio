@@ -126,6 +126,7 @@ footer {
   grid-template-rows: 100px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 'header header';
+  box-shadow: 0 0 10px var(--lt-grey);
   /* justify-items: center; */
   /* align-content: center; */
 }
@@ -145,7 +146,6 @@ footer {
   color: var(--lt-grey);
   background-color: black;
   text-decoration: none;
-  border: 1px solid black;
   /* border-radius: 5px; */
   transition: transform 2s;
 }
