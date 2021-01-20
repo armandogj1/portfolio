@@ -1,26 +1,31 @@
-.intro {
+.index {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   height: 100%;
-  padding: 5em 0 5em 2em;
-
-  /* padding-bottom: 1em; */
+  padding: 5em 0 5em 0em;
 }
 
-/* .intro p:first-child {
-  margin-top: 20%;
-  outline: aquamarine solid 2px;
-} */
+.index h1,
+.index p {
+  padding-left: 1rem;
+}
 
-.intro a {
+.index a {
   width: fit-content;
   align-self: center;
 }
 
-.intro a:last-child {
-  outline: aquamarine solid 2px;
+.index a:last-child {
   justify-content: flex-end;
+}
+
+.intro p {
+  margin-bottom: 0;
+  color: var(--bg-grey);
+}
+
+.intro h1 {
+  font-weight: 600;
 }

@@ -1,6 +1,8 @@
 :root {
   --bg-grey: #2a2a2a;
+  --transp-grey: rgba(38, 38, 38, 0.5);
   --bg-green: rgb(82, 255, 174);
+  --dark-green: rgb(82, 225, 159);
   --lt-grey: rgb(199, 199, 199);
   --lt-grey-hl: rgb(242, 242, 242);
   --lt-green-bg: #2a2a2a;
@@ -164,20 +166,18 @@ footer {
   font-family: var(--kameron);
 }
 
-.intro {
+.index {
   text-align: center;
 }
 
 #main-block-projects {
   display: grid;
   height: 100%;
-  max-width: 720px;
   grid-template-rows: 100px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 'header header';
+  gap: 0.5em;
   box-shadow: 0 0 10px var(--lt-grey);
-  /* justify-items: center; */
-  /* align-content: center; */
 }
 
 #main-block-projects h3 {
@@ -198,33 +198,10 @@ footer {
   transition: transform 2s;
 }
 
-.project-tile a:focus {
-  transform: scale(3);
-}
-
-.project-tile h3 {
-  text-align: center;
-}
-
-.project-tile-overlay {
-  position: absolute;
-  transition: opacity 0.5s;
-}
-
-.project-tile-overlay:hover {
-  opacity: 0;
-}
-
 .project-tile-text {
   width: 360px;
   height: 200px;
   text-align: center;
-  transition: font-size 1s ease;
-  -webkit-transition: font-size 1s ease;
-}
-
-.project-tile-text:hover {
-  color: var(--lt-grey-hl);
 }
 
 #main-page-button {
@@ -235,6 +212,31 @@ footer {
   background-color: var(--bg-green);
   color: var(--lt-green-bg);
   font-weight: bold;
+}
+@media screen and (min-width: 601px) {
+  .project-tile a:focus {
+    transform: scale(3);
+  }
+
+  .project-tile h3 {
+    text-align: center;
+  }
+
+  .project-tile-overlay {
+    z-index: 0;
+    position: absolute;
+  }
+  .project-tile-text {
+    z-index: 1;
+    background-color: var(--transp-grey);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .project-tile-text:hover {
+    opacity: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -249,18 +251,19 @@ footer {
     flex-direction: column;
     /* width: 100vw; */
   }
-  .project-tile-overlay {
-    display: absolute;
-    /* left: 0px; */
-    /* width: 100vw; */
-    z-index: 0;
-    opacity: 75%;
+  .project-tile {
+    position: relative;
+    width: 100%;
   }
 
-  .project-tile {
-    border-radius: 0;
-    background-color: transparent;
-    width: 100%;
+  .project-tile-overlay {
+    position: absolute;
+    z-index: 0;
+  }
+  .project-tile-text {
+    background-color: var(--transp-grey);
+    backdrop-filter: blur(10px);
+    z-index: 1;
   }
 
   img {
