@@ -102,15 +102,11 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--bg-grey);
-  top: -100%;
+  top: -100vh;
   height: 100vh;
   width: 100vw;
   padding: 0 10px;
 }
-
-/* .nav:first-child {
-	justify-content: left;
-} */
 
 #burger-open,
 #burger-close {
