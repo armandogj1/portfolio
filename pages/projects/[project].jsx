@@ -22,10 +22,14 @@ const Project = ({
       <h5>{description}</h5>
       <p>{summary}</p>
       <span className={styles['external-links']}>
-        <a href={github}>
+        <a href={github} target='_blank' rel='noopener noreferrer'>
           <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
         </a>
-        {deployed && <a href={deployed}>App</a>}
+        {deployed && (
+          <a href={deployed} target='_blank' rel='noopener noreferrer'>
+            App
+          </a>
+        )}
       </span>
     </div>
   );

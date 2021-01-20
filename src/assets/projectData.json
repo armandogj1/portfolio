@@ -20,7 +20,7 @@
   },
   {
     "name": "CloudStorm",
-    "image": "apptendance.png",
+    "image": "cloudstorm.png",
     "path": "cloudstorm",
     "description": "Micro-service for an e-commerce front-end",
     "github": "https://github.com/Cumulonimbus-SDC/Products",
