@@ -240,10 +240,20 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
   #main-block-projects {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 
   .project-body {
@@ -254,6 +264,11 @@ footer {
   .project-tile {
     position: relative;
     width: 100%;
+  }
+
+  .project-tile h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 
   .project-tile-overlay {
