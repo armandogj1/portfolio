@@ -58,12 +58,13 @@
     "deployed": "https://www.npmjs.com/package/npmrum"
   },
   {
-    "name": "git-cli",
+    "name": "g(it)ty",
     "image": "git-cli.png",
-    "path": "git-cli",
+    "path": "gty",
     "description": "CLI to selectively add files for commit",
     "github": "https://github.com/armandogj1/npmrum",
     "technologies": "Node/React-Ink",
-    "summary": "Command line app using react-ink to easily select the files to add before a commit. Helpful for organizing git commits."
+    "summary": "Command line app using react-ink to easily select the files to add before a commit. Helpful for organizing git commits.",
+    "deployed": "https://www.npmjs.com/package/gty"
   }
 ]
