@@ -158,10 +158,6 @@ footer {
   color: orange;
 }
 
-#main-block {
-  height: 100%;
-}
-
 #main-block p {
   font-family: var(--kameron);
 }
@@ -214,6 +210,10 @@ footer {
   font-weight: bold;
 }
 @media screen and (min-width: 601px) {
+  #main-block {
+    height: 100%;
+  }
+
   .project-tile a:focus {
     transform: scale(3);
   }
@@ -240,7 +240,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  #layout {
     height: 100vh;
   }
 
@@ -254,6 +254,31 @@ footer {
 
   h3 {
     font-size: 1rem;
+  }
+
+  .nav {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    z-index: 5000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-grey);
+    /* top: -100%; */
+    height: 100vh;
+    width: 100vw;
+    padding: 0 10px;
+  }
+
+  .nav.transition-open {
+    transition: transform 1s ease-out;
+    transform: translateY(100vh);
+  }
+
+  .nav.transition-close {
+    transition: transform 2s ease-out;
+    transform: translateY(-100vh);
   }
 
   .project-body {
