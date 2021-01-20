@@ -44,7 +44,8 @@
     "description": "Axios wrapper for Command Line",
     "github": "https://github.com/armandogj1/fesh",
     "technologies": "Node",
-    "summary": "A simple command-line tool to make http requests. Provides most common requests methods and options for data and headers."
+    "summary": "A simple command-line tool to make http requests. Provides most common requests methods and options for data and headers.",
+    "deployed": "https://www.npmjs.com/package/fesh"
   },
   {
     "name": "npmrum",
@@ -53,7 +54,8 @@
     "description": "CLI to run rpm scripts",
     "github": "https://github.com/armandogj1/npmrum",
     "technologies": "Node/React-Ink",
-    "summary": "Command line app using react-ink to find and select available npm scripts. If the current directory contains a package.json, all available scripts will be accessible and ready to run."
+    "summary": "Command line app using react-ink to find and select available npm scripts. If the current directory contains a package.json, all available scripts will be accessible and ready to run.",
+    "deployed": "https://www.npmjs.com/package/npmrum"
   },
   {
     "name": "git-cli",
