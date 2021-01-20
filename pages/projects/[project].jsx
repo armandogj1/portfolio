@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Layout from '../../src/Layout';
 import projectsData from '../../src/assets/projectData.json';
 import styles from '../../src/styles/[project].module.css';
@@ -21,7 +22,9 @@ const Project = ({
       <h5>{description}</h5>
       <p>{summary}</p>
       <span className={styles['external-links']}>
-        <a href={github}>🐙🐱</a>
+        <a href={github}>
+          <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
+        </a>
         {deployed && <a href={deployed}>App</a>}
       </span>
     </div>
