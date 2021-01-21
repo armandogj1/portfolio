@@ -29,9 +29,7 @@ export const Football = () => {
   };
 
   const handleMove = (e) => {
-    if (clicked) {
-      setPosition({ x: e.clientX, y: e.clientY });
-    }
+    setPosition({ x: e.clientX, y: e.clientY });
   };
 
   const handleMouseUp = (e) => {
