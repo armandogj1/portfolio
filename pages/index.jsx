@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../src/Layout';
@@ -5,6 +6,16 @@ import { Football } from '../src/Football';
 import styles from '../src/styles/index.module.css';
 
 const App = (props) => {
+  useEffect(() => {
+    document.body.style.maxHeight = '100vh';
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.maxHeight = 'none';
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   return (
     <section className={styles.index}>
       <div className={styles.intro}>

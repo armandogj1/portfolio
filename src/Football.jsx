@@ -54,6 +54,9 @@ export const Football = () => {
         onMouseDown={handleMouseDown}
         onMouseMove={handleMove}
         onMouseUp={handleMouseUp}
+        onTouchEnd={handleMouseUp}
+        onTouchMove={handleMove}
+        onTouchStart={handleMouseDown}
       ></div>
     </div>
   );
