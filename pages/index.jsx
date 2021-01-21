@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../src/Layout';
+import { Football } from '../src/Football';
 import styles from '../src/styles/index.module.css';
 
 const App = (props) => {
   return (
     <section className={styles.index}>
       <div className={styles.intro}>
-        <p>Hello, my name is</p>
+        <p>Hi, my name is</p>
         <h1>Armando Garcia-Jacquier</h1>
       </div>
       <p>
@@ -24,6 +25,7 @@ const App = (props) => {
       >
         <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
       </a>
+      <Football />
     </section>
   );
 };
