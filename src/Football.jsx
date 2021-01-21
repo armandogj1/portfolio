@@ -3,15 +3,21 @@ import styles from './styles/index.module.css';
 
 export const Football = () => {
   const [clicked, setClicked] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [position, setPosition] = useState({
     x: 600,
     y: 600,
   });
 
   useEffect(() => {
+    if (window.innerWidth <= 500) {
+      setIsMobile(true);
+    }
+
     const ball = document.getElementById('football');
     // console.log(ball.clientWidth);
     // console.log('this is innerWidth', window.innerWidth);
+    console.log('this is browser', window);
     setPosition({
       x: window.innerWidth - window.innerWidth / 5,
       y: window.innerHeight - ball.clientHeight / 64,
@@ -29,7 +35,9 @@ export const Football = () => {
   };
 
   const handleMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
+    if (clicked) {
+      setPosition({ x: e.clientX, y: e.clientY });
+    }
   };
 
   const handleMouseUp = (e) => {
@@ -46,16 +54,23 @@ export const Football = () => {
       >
         ⚽️
       </div>
-      <div
-        className={styles.ghost}
-        style={stylePosition}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMove}
-        onMouseUp={handleMouseUp}
-        onTouchEnd={handleMouseUp}
-        onTouchMove={handleMove}
-        onTouchStart={handleMouseDown}
-      ></div>
+      {!isMobile ? (
+        <div
+          className={styles.ghost}
+          style={stylePosition}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMove}
+          onMouseUp={handleMouseUp}
+        ></div>
+      ) : (
+        <div
+          className={styles.ghost}
+          style={stylePosition}
+          onTouchEnd={handleMouseUp}
+          onTouchMove={handleMove}
+          onTouchStart={handleMouseDown}
+        ></div>
+      )}
     </div>
   );
 };
