@@ -1,13 +1,12 @@
 [
   {
-    "name": "Namaslay",
-    "image": "namaslay.png",
-    "path": "namaslay",
-    "description": "Meditation and Yoga Social App",
-    "github": "https://github.com/blue-ocean-hrnyc31/namaslay-client",
-    "technologies": "Node/React/Postgres/AWS",
-    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message.",
-    "deployed": "http://go-with-the-flow.herokuapp.com/"
+    "name": "CloudStorm",
+    "image": "cloudstorm.png",
+    "path": "cloudstorm",
+    "description": "Micro-service for an e-commerce front-end",
+    "github": "https://github.com/Cumulonimbus-SDC/Products",
+    "technologies": "Node/Postgres/Docker/Redis/AWS",
+    "summary": "API microservice using docker, postgres and Express; deployed on AWS t2.micro"
   },
   {
     "name": "Robin",
@@ -17,15 +16,6 @@
     "github": "https://github.com/armandogj1/Robin",
     "technologies": "Node/React/Redux",
     "summary": "A retail page using React, Redux, React-router. Provides product overview, favorited styles and ratings & reviews for a large collection of merchandice."
-  },
-  {
-    "name": "CloudStorm",
-    "image": "cloudstorm.png",
-    "path": "cloudstorm",
-    "description": "Micro-service for an e-commerce front-end",
-    "github": "https://github.com/Cumulonimbus-SDC/Products",
-    "technologies": "Node/Postgres/Docker/AWS",
-    "summary": "API microservice using docker, postgres and Express; deployed on AWS t2.micro"
   },
   {
     "name": "Apptendance",
@@ -76,5 +66,15 @@
     "technologies": "Node/React/MongoDB",
     "summary": "Single Page React App providing translation for Spanish coloquialisms by country",
     "deployed": "https://fast-hollows-50702.herokuapp.com/"
+  },
+  {
+    "name": "Namaslay",
+    "image": "namaslay.png",
+    "path": "namaslay",
+    "description": "Meditation and Yoga Social App",
+    "github": "https://github.com/blue-ocean-hrnyc31/namaslay-client",
+    "technologies": "Node/React/Passport/Postgres/AWS",
+    "summary": "A social media app for yoga and meditation, with where clients can access private rooms to practice and message.",
+    "deployed": "http://go-with-the-flow.herokuapp.com/"
   }
 ]
