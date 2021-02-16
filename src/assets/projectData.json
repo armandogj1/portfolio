@@ -34,7 +34,7 @@
     "description": "An attendance app for use at Hack Reactor",
     "github": "https://github.com/armandogj1/Appttendance",
     "technologies": "Node/React/GoogleAPI",
-    "summary": "A single page app to take student attendance. The sudents tally persist in a Google Sheet and email templates are provided for tardies and absences.",
+    "summary": "A single page app to take student attendance. The students tally persist in a Google Sheet and email templates are provided for tardies and absences.",
     "deployed": "https://gentle-brook-48303.herokuapp.com/"
   },
   {
@@ -51,7 +51,7 @@
     "name": "npmrum",
     "image": "npmrum.png",
     "path": "npmrum",
-    "description": "CLI to run rpm scripts",
+    "description": "CLI to run npm scripts for a given repo",
     "github": "https://github.com/armandogj1/npmrum",
     "technologies": "Node/React-Ink",
     "summary": "Command line app using react-ink to find and select available npm scripts. If the current directory contains a package.json, all available scripts will be accessible and ready to run.",

@@ -24,7 +24,7 @@ const App = (props) => {
       </div>
       <p>
         I am a full-stack developer, living in NYC focusing on making
-        intereseting things while keeping it simple.
+        interesting things while keeping it simple.
       </p>
       <Link href='/projects'>
         <a id='main-page-button'>Checkout My Work</a>
@@ -36,7 +36,6 @@ const App = (props) => {
       >
         <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
       </a>
-      <Football />
     </section>
   );
 };
