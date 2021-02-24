@@ -5,6 +5,7 @@ import Layout from '../src/Layout';
 import { Football } from '../src/Football';
 import styles from '../src/styles/index.module.css';
 
+// main component
 const App = (props) => {
   useEffect(() => {
     document.body.style.maxHeight = '100vh';
@@ -34,7 +35,12 @@ const App = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
+        <Image
+          src='/GitHub.png'
+          alt='github logo'
+          width='24'
+          height='24'
+        />
       </a>
     </section>
   );

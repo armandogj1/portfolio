@@ -6,6 +6,7 @@ import styles from '../../src/styles/[project].module.css';
 
 const Project = ({
   name,
+  image,
   description,
   technologies,
   summary,
@@ -16,22 +17,45 @@ const Project = ({
   const { project } = router.query;
 
   return (
-    <div className={styles['project-body']}>
-      <h1>{name}</h1>
-      <h3>{technologies}</h3>
-      <h5>{description}</h5>
-      <p>{summary}</p>
+    <section className={styles['project-body']}>
+      <div className={styles['project-main']}>
+        <div className={styles['project-image']}>
+          {image.map((img) => (
+            <img
+              key={img}
+              className={styles['project-img']}
+              src={`/${img}`}
+              alt='project image'
+            />
+          ))}
+        </div>
+        <div className={styles['project-content']}>
+          <h1>{name}</h1>
+          <h3>{technologies}</h3>
+          <h5>{description}</h5>
+          <p>{summary}</p>
+        </div>
+      </div>
       <span className={styles['external-links']}>
         <a href={github} target='_blank' rel='noopener noreferrer'>
-          <Image src='/GitHub.png' alt='github logo' width='24' height='24' />
+          <Image
+            src='/GitHub.png'
+            alt='github logo'
+            width='24'
+            height='24'
+          />
         </a>
         {deployed && (
-          <a href={deployed} target='_blank' rel='noopener noreferrer'>
+          <a
+            href={deployed}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             App
           </a>
         )}
       </span>
-    </div>
+    </section>
   );
 };
 
@@ -46,7 +70,9 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const [project] = projectsData.filter((p) => params.project === p.path);
+  const [project] = projectsData.filter(
+    (p) => params.project === p.path
+  );
 
   return {
     props: { ...project },

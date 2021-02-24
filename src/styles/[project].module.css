@@ -1,19 +1,72 @@
 .project-body {
   display: flex;
-  width: 720px;
+  width: 80vw;
+  height: 100%;
   flex-direction: column;
   align-items: center;
 }
 
+.project-body h1 {
+  color: rgb(66, 238, 158);
+  font-weight: 400;
+}
+
 .project-body h3 {
-  color: var(--bg-green);
+  color: var(--bg-grey);
+  font-size: 1em;
   font-weight: 400;
   margin-top: 0;
 }
 
 .project-body h5 {
   font-family: var(--kameron);
-  font-size: 1.25em;
+  font-size: 0.85em;
+}
+
+.project-main {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+.project-image {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-img {
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+.project-content {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--transp-grey-light);
+  backdrop-filter: blur(30px);
+  width: 30%;
+  right: 0;
+  margin-right: 2em;
+  padding: 1em 1em;
+  border-radius: 5px;
+  box-shadow: var(--transp-grey) 0 0 20px 5px;
+}
+
+.project-content h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.project-content p {
+  font-size: 0.75em;
 }
 
 .external-links {

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from './Menu';
+//
 
 const Layout = ({ children, title }) => {
   const buttons = [
@@ -13,7 +14,10 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>portfolio</title>
         <meta charSet='utf-8' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='viewport'
+          content='initial-scale=1.0, width=device-width'
+        />
       </Head>
       <header id='header'>
         <Menu buttons={buttons}></Menu>

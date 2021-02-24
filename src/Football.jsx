@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './styles/index.module.css';
+// no longer using this component
 
 export const Football = () => {
   const [clicked, setClicked] = useState(false);

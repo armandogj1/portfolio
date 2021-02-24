@@ -1,7 +1,7 @@
 [
   {
     "name": "CloudStorm",
-    "image": "cloudstorm.png",
+    "image": ["cloudstorm-optimized.png"],
     "path": "cloudstorm",
     "description": "Micro-service for an e-commerce front-end",
     "github": "https://github.com/Cumulonimbus-SDC/Products",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Robin",
-    "image": "robin.png",
+    "image": ["robin.png"],
     "path": "robin",
     "description": "Single Page e-commerce App",
     "github": "https://github.com/armandogj1/Robin",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Apptendance",
-    "image": "apptendance.png",
+    "image": ["apptendance.png"],
     "path": "apptendance",
     "description": "An attendance app for use at Hack Reactor",
     "github": "https://github.com/armandogj1/Appttendance",
@@ -29,7 +29,7 @@
   },
   {
     "name": "fesh",
-    "image": "fesh.png",
+    "image": ["fesh.png"],
     "path": "fesh",
     "description": "Axios wrapper for Command Line",
     "github": "https://github.com/armandogj1/fesh",
@@ -39,7 +39,7 @@
   },
   {
     "name": "npmrum",
-    "image": "npmrum.png",
+    "image": ["npmrum.png"],
     "path": "npmrum",
     "description": "CLI to run npm scripts for a given repo",
     "github": "https://github.com/armandogj1/npmrum",
@@ -49,7 +49,7 @@
   },
   {
     "name": "g(it)ty",
-    "image": "git-cli.png",
+    "image": ["git-cli.png"],
     "path": "gty",
     "description": "CLI to selectively add files for commit",
     "github": "https://github.com/armandogj1/npmrum",
@@ -59,7 +59,7 @@
   },
   {
     "name": "kDice",
-    "image": "kdice.png",
+    "image": ["kdice.png"],
     "path": "kDice",
     "description": "Translator from Spanish to Spanish",
     "github": "https://github.com/armandogj1/kdice",
@@ -69,7 +69,7 @@
   },
   {
     "name": "Namaslay",
-    "image": "namaslay.png",
+    "image": ["namaslay.png"],
     "path": "namaslay",
     "description": "Meditation and Yoga Social App",
     "github": "https://github.com/blue-ocean-hrnyc31/namaslay-client",

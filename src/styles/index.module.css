@@ -33,7 +33,7 @@
   font-weight: 600;
 }
 
-.football {
+/* .football {
   position: absolute;
   display: flex;
   box-sizing: border-box;
@@ -45,7 +45,7 @@
   transform: translate(-50%, -50%) scale(0.25);
   cursor: pointer;
   z-index: 0;
-}
+} */
 
 .ghost {
   position: absolute;

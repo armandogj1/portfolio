@@ -9,7 +9,7 @@ const ProjectTile = ({ name, image, description, github }) => {
       </div>
       <div className='project-tile-overlay'>
         <Image
-          src={`/${image}`}
+          src={`/${image[0]}`}
           alt={`${name} Image`}
           width='360'
           height='200'
