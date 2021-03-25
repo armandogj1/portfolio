@@ -27,6 +27,8 @@ const style = {
   color: '#52ffae',
   height: '300px',
   'font-size': '1.25em',
+  resize: 'none',
+  overflow: 'auto',
 };
 
 // helpers
@@ -100,6 +102,15 @@ const executeCommand = (commandStr, router) => {
     case 'open':
       const fileToOpen = rest.join('');
       return open(router, fileToOpen);
+    case 'man':
+      const cheatsheet = `Site is also accessible via the hamburger menu
+      Commands:
+      ls - list elements in directory. Does not work on files
+      cat - display file content. Does not work on directories
+      open - access file. Does not work on directories
+      echo - print to console. Repeats any text typed after command
+      clear - empty text from console`;
+      return `${commandStr}\n${cheatsheet}\n${prompt} `;
     default:
       if (!command) return commandStr + '\n$ ';
       const notCommand = '\nCommand not valid';
@@ -108,7 +119,7 @@ const executeCommand = (commandStr, router) => {
 };
 
 const Shell = () => {
-  const initialPrompt = 'use shell to navigate website';
+  const initialPrompt = 'you can use the shell to navigate\ntype man for instruction';
   const [prompt, setPrompt] = useState(`${initialPrompt}\n$ `);
   const router = useRouter();
 
